@@ -1,0 +1,131 @@
+[
+  {
+    "id": "1793946158113",
+    "timestamp": "2026-11-06T06:22:38.113Z",
+    "student": {
+      "age": 21,
+      "gender": "Male",
+      "academic_level": "Undergraduate",
+      "most_used_platform": "Instagram",
+      "purpose_of_use": "Entertainment",
+      "avg_daily_usage_hours": 6.5,
+      "daily_unlocks": 210,
+      "study_hours": 1.8,
+      "physical_activity_hours": 0.8,
+      "sleep_hours_per_night": 5,
+      "text_narrative": "I feel completely overwhelmed by upcoming deadlines and lack of sleep."
+    },
+    "result": {
+      "prediction": "Medium",
+      "confidence_percentage": 63.98,
+      "class_probabilities": {
+        "High": 0.2511,
+        "Low": 0.1054,
+        "Medium": 0.6398,
+        "Very High": 0.0037
+      },
+      "recommendations": [
+        "Great balance! Maintain your current sleep, study, and social media habits."
+      ],
+      "model_used": "Multi-Boosting Stacking Ensemble on Hybrid Features (f3)"
+    }
+  },
+  {
+    "id": "1793294244154",
+    "timestamp": "2026-10-29T17:17:24.154Z",
+    "student": {
+      "Age": 21,
+      "Gender": "Male",
+      "Country": "USA",
+      "Academic_Level": "Undergraduate",
+      "Most_Used_Platform": "Instagram",
+      "Purpose_Of_Use": "Entertainment",
+      "Avg_Daily_Usage_Hours": 5.5,
+      "Daily_Unlocks": 140,
+      "Study_Hours": 3.5,
+      "Physical_Activity_Hours": 1,
+      "Sleep_Hours_Per_Night": 6.5
+    },
+    "result": {
+      "prediction": "High",
+      "confidence_percentage": 69.63,
+      "class_probabilities": {
+        "High": 0.6963,
+        "Low": 0.0039,
+        "Medium": 0.2206,
+        "Very High": 0.0792
+      },
+      "recommendations": [
+        "Critical: Consider booking a session with your university mental wellness counselor.",
+        "Screen Time Alert: You spend 5.5 hrs/day on social media. Try setting daily app limits to reduce cognitive fatigue."
+      ],
+      "model_used": "Multi-Boosting Stacking Ensemble on Hybrid Features (f3)"
+    }
+  },
+  {
+    "id": "1793293300731",
+    "timestamp": "2026-10-29T17:01:40.731Z",
+    "student": {
+      "Daily_Unlocks": 45,
+      "Physical_Activity_Hours": 2,
+      "Purpose_Of_Use": "Education",
+      "Sleep_Hours_Per_Night": 8.5,
+      "Most_Used_Platform": "LinkedIn",
+      "Avg_Daily_Usage_Hours": 1.5,
+      "Academic_Level": "Graduate",
+      "Study_Hours": 6,
+      "Gender": "Female",
+      "Country": "Canada",
+      "Age": 22
+    },
+    "result": {
+      "prediction": "Low",
+      "confidence_percentage": 78.69,
+      "class_probabilities": {
+        "High": 0.0008,
+        "Low": 0.7869,
+        "Medium": 0.2076,
+        "Very High": 0.0047
+      },
+      "recommendations": [
+        "Great balance! Maintain your current sleep, study, and social media habits."
+      ],
+      "model_used": "Multi-Boosting Stacking Ensemble on Hybrid Features (f3)"
+    }
+  },
+  {
+    "id": "1793293294438",
+    "timestamp": "2026-10-29T17:01:34.438Z",
+    "student": {
+      "Daily_Unlocks": 180,
+      "Physical_Activity_Hours": 0.5,
+      "Purpose_Of_Use": "Entertainment",
+      "Sleep_Hours_Per_Night": 5,
+      "Most_Used_Platform": "Instagram",
+      "Avg_Daily_Usage_Hours": 6.5,
+      "Academic_Level": "Undergraduate",
+      "Study_Hours": 2,
+      "Gender": "Male",
+      "Country": "USA",
+      "Age": 21
+    },
+    "result": {
+      "prediction": "Very High",
+      "confidence_percentage": 90.78,
+      "class_probabilities": {
+        "High": 0.0897,
+        "Low": 0.0017,
+        "Medium": 0.0008,
+        "Very High": 0.9078
+      },
+      "recommendations": [
+        "Critical: Consider booking a session with your university mental wellness counselor.",
+        "Screen Time Alert: You spend 6.5 hrs/day on social media. Try setting daily app limits to reduce cognitive fatigue.",
+        "Habit Notice: 180 daily phone unlocks indicates frequent interruption. Consider enabling 'Do Not Disturb' during study hours.",
+        "Sleep Deprivation: 5.0 hrs/night is below the recommended 7-9 hours. Avoid screens 45 minutes before bedtime.",
+        "Movement: Incorporate at least 30 minutes of aerobic exercise, walking, or yoga daily to naturally lower cortisol levels."
+      ],
+      "model_used": "Multi-Boosting Stacking Ensemble on Hybrid Features (f3)"
+    }
+  }
+]

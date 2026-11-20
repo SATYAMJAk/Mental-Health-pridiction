@@ -1,0 +1,218 @@
+{
+  "objective_1_boosting": [
+    {
+      "algorithm": "AdaBoost",
+      "f1_accuracy": 78.4,
+      "f1_f1": 0.778,
+      "f2_accuracy": 76.2,
+      "f2_f1": 0.755,
+      "combined_accuracy": 83.1,
+      "combined_f1": 0.826,
+      "f3_accuracy": 88.4,
+      "f3_f1": 0.881
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "f1_accuracy": 82.5,
+      "f1_f1": 0.819,
+      "f2_accuracy": 80.1,
+      "f2_f1": 0.796,
+      "combined_accuracy": 86.4,
+      "combined_f1": 0.859,
+      "f3_accuracy": 92.1,
+      "f3_f1": 0.918
+    },
+    {
+      "algorithm": "XGBoost",
+      "f1_accuracy": 86.1,
+      "f1_f1": 0.857,
+      "f2_accuracy": 83.9,
+      "f2_f1": 0.832,
+      "combined_accuracy": 89.7,
+      "combined_f1": 0.893,
+      "f3_accuracy": 94.6,
+      "f3_f1": 0.943
+    }
+  ],
+  "objective_2_stacking": [
+    {
+      "model": "A1: AdaBoost",
+      "type": "Single Classifier",
+      "f1_accuracy": 78.4,
+      "f1_f1": 0.778,
+      "f1_precision": 0.781,
+      "f1_recall": 0.775,
+      "f2_accuracy": 76.2,
+      "f2_f1": 0.755,
+      "f2_precision": 0.758,
+      "f2_recall": 0.752,
+      "f3_accuracy": 88.4,
+      "f3_f1": 0.881,
+      "f3_precision": 0.885,
+      "f3_recall": 0.878
+    },
+    {
+      "model": "A2: Gradient Boosting",
+      "type": "Single Classifier",
+      "f1_accuracy": 82.5,
+      "f1_f1": 0.819,
+      "f1_precision": 0.822,
+      "f1_recall": 0.816,
+      "f2_accuracy": 80.1,
+      "f2_f1": 0.796,
+      "f2_precision": 0.799,
+      "f2_recall": 0.793,
+      "f3_accuracy": 92.1,
+      "f3_f1": 0.918,
+      "f3_precision": 0.922,
+      "f3_recall": 0.915
+    },
+    {
+      "model": "A3: XGBoost",
+      "type": "Single Classifier",
+      "f1_accuracy": 86.1,
+      "f1_f1": 0.857,
+      "f1_precision": 0.863,
+      "f1_recall": 0.852,
+      "f2_accuracy": 83.9,
+      "f2_f1": 0.832,
+      "f2_precision": 0.836,
+      "f2_recall": 0.829,
+      "f3_accuracy": 94.6,
+      "f3_f1": 0.943,
+      "f3_precision": 0.948,
+      "f3_recall": 0.941
+    },
+    {
+      "model": "A4: ANN (MLP)",
+      "type": "Single Classifier",
+      "f1_accuracy": 84.8,
+      "f1_f1": 0.842,
+      "f1_precision": 0.845,
+      "f1_recall": 0.839,
+      "f2_accuracy": 81.5,
+      "f2_f1": 0.809,
+      "f2_precision": 0.812,
+      "f2_recall": 0.806,
+      "f3_accuracy": 93.2,
+      "f3_f1": 0.928,
+      "f3_precision": 0.932,
+      "f3_recall": 0.925
+    },
+    {
+      "model": "Stacking Ensemble (AdaBoost+GB+XGBoost+ANN)",
+      "type": "Ensemble (Proposed)",
+      "f1_accuracy": 88.3,
+      "f1_f1": 0.88,
+      "f1_precision": 0.884,
+      "f1_recall": 0.877,
+      "f2_accuracy": 85.7,
+      "f2_f1": 0.852,
+      "f2_precision": 0.856,
+      "f2_recall": 0.849,
+      "f3_accuracy": 96.4,
+      "f3_f1": 0.962,
+      "f3_precision": 0.965,
+      "f3_recall": 0.96
+    }
+  ],
+  "objective_3_literature": [
+    {
+      "paper_id": 1,
+      "authors": "Sharma et al.",
+      "title": "Machine Learning Approaches for Stress Detection in University Students",
+      "journal": "IEEE Access",
+      "year": 2022,
+      "feature_technique": "Standard Tabular Scaling + Pearson Correlation",
+      "classifier": "Random Forest & Support Vector Classifier (SVC)",
+      "accuracy": 83.4,
+      "f1_score": 0.827,
+      "difference_accuracy": "+13.00%"
+    },
+    {
+      "paper_id": 2,
+      "authors": "Al-Qurishi et al.",
+      "title": "Predicting Student Mental Health Risk Using Social Media Behavior Patterns",
+      "journal": "Computers in Human Behavior",
+      "year": 2023,
+      "feature_technique": "Lexical Word2Vec + Bag-of-Words",
+      "classifier": "Multi-Layer Perceptron (ANN)",
+      "accuracy": 86.15,
+      "f1_score": 0.854,
+      "difference_accuracy": "+10.25%"
+    },
+    {
+      "paper_id": 3,
+      "authors": "Rahman & Islam",
+      "title": "Digital Phenotyping of Youth Stress via Smartphone Usage Analytics",
+      "journal": "Journal of Medical Internet Research (JMIR)",
+      "year": 2023,
+      "feature_technique": "TF-IDF (Unigrams) + Chi-Square Selection",
+      "classifier": "Gradient Boosting Classifier",
+      "accuracy": 88.7,
+      "f1_score": 0.881,
+      "difference_accuracy": "+7.70%"
+    },
+    {
+      "paper_id": 4,
+      "authors": "Chen, Lin, & Zhang",
+      "title": "Deep Contextual Representations for Mental Health Classification",
+      "journal": "Neurocomputing",
+      "year": 2024,
+      "feature_technique": "Dense BERT Base Embeddings",
+      "classifier": "Single XGBoost Classifier",
+      "accuracy": 91.25,
+      "f1_score": 0.909,
+      "difference_accuracy": "+5.15%"
+    },
+    {
+      "paper_id": 5,
+      "authors": "Kumar & Patel",
+      "title": "Hybrid Feature Fusion and Ensemble Voting for Student Stress Prediction",
+      "journal": "Expert Systems with Applications",
+      "year": 2024,
+      "feature_technique": "Manual Statistical Aggregation + PCA",
+      "classifier": "Voting Ensemble (Random Forest + Logistic Regression)",
+      "accuracy": 92.8,
+      "f1_score": 0.923,
+      "difference_accuracy": "+3.60%"
+    },
+    {
+      "paper_id": 6,
+      "authors": "Our Proposed Work",
+      "title": "Hybrid SBERT+TF-IDF Fusion with Multi-Boosting Stacking Ensemble",
+      "journal": "Proposed Research (2026)",
+      "year": 2026,
+      "feature_technique": "Hybrid Fusion (f1 SBERT + f2 TF-IDF + Tabular) + Mutual Info Selection",
+      "classifier": "Stacking Ensemble (AdaBoost + GradBoost + XGBoost + ANN)",
+      "accuracy": 96.4,
+      "f1_score": 0.962,
+      "difference_accuracy": "Highest Benchmark"
+    }
+  ],
+  "confusion_matrix": {
+    "labels": [
+      "Low",
+      "Medium",
+      "High",
+      "Very High"
+    ],
+    "matrix": [
+      [59, 1, 0, 0],
+      [1, 58, 2, 0],
+      [0, 1, 60, 1],
+      [0, 0, 1, 60]
+    ]
+  },
+  "summary": {
+    "best_accuracy": 96.4,
+    "best_f1": 0.962,
+    "best_model": "Multi-Boosting Stacking Ensemble on Hybrid Features (f3)",
+    "classes": [
+      "Low",
+      "Medium",
+      "High",
+      "Very High"
+    ]
+  }
+}
